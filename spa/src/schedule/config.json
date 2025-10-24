@@ -1,0 +1,21 @@
+{
+  "title": "Ближайшие матчи",
+  "description": "Следите за ключевыми противостояниями регулярного сезона.",
+  "matches": [
+    {
+      "home": "Aurora Foxes",
+      "away": "Polar Owls",
+      "startsAt": "2025-03-02T18:30:00+03:00"
+    },
+    {
+      "home": "Nebula Bears",
+      "away": "Crystal Sharks",
+      "startsAt": "2025-03-05T20:00:00+03:00"
+    },
+    {
+      "home": "Helios Lynx",
+      "away": "Aurora Foxes",
+      "startsAt": "2025-03-12T19:15:00+03:00"
+    }
+  ]
+}
