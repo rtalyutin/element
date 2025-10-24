@@ -1,0 +1,9 @@
+checklist:
+  - criterion: "LCP ≤ 2.5 с"
+    guidance: "Оптимизировать главный рендер, использовать fetchpriority=\"high\""
+  - criterion: "Hero использует <picture> с AVIF/WebP"
+    guidance: "Добавить fallback JPG и srcset для @2x"
+  - criterion: "Preload WOFF2"
+    guidance: "<link rel=\"preload\" ... as=font type=font/woff2 crossorigin"
+  - criterion: "Hero-кнопки визуально доступны"
+    guidance: "Контраст и hover/focus состояния"

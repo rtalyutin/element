@@ -1,0 +1,47 @@
+{
+  "heading": "Мастерская Мятый элемент",
+  "subheading": "Кузовной ремонт",
+  "tagline": "От царапки до тотала",
+  "ctas": [
+    {
+      "label": "Записаться",
+      "href": "#contact-form",
+      "analyticsId": "hero-book",
+      "variant": "primary"
+    },
+    {
+      "label": "Позвонить",
+      "href": "tel:+79990000000",
+      "analyticsId": "hero-call",
+      "variant": "secondary"
+    }
+  ],
+  "badges": [
+    {
+      "label": "Ремонт геометрии",
+      "icon": "frame"
+    },
+    {
+      "label": "Гарантия 1 год",
+      "icon": "shield"
+    },
+    {
+      "label": "Страховые кейсы",
+      "icon": "check"
+    },
+    {
+      "label": "Фото до/после",
+      "icon": "camera"
+    }
+  ],
+  "proofs": [
+    {
+      "label": "Страховые кейсы",
+      "icon": "check"
+    },
+    {
+      "label": "Фото до/после",
+      "icon": "camera"
+    }
+  ]
+}

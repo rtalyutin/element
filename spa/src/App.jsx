@@ -1,16 +1,10 @@
-import Layout from './components/Layout';
-import Hero from './hero/Hero';
-import Highlights from './highlights/Highlights';
-import Contacts from './contacts/Contacts';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 
 const App = () => (
-  <Layout>
-    <Hero />
-    <Highlights />
-    <div id="pricing" className="anchor-placeholder" aria-hidden="true" />
-    <div id="gallery" className="anchor-placeholder" aria-hidden="true" />
-    <Contacts />
-  </Layout>
+  <Routes>
+    <Route path="/" element={<Home />} />
+  </Routes>
 );
 
 export default App;

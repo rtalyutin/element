@@ -1,0 +1,9 @@
+checklist:
+  - criterion: "CTA кнопки имеют aria-label"
+    guidance: "CTAGroup присваивает aria-label с контекстом действия"
+  - criterion: "Видимый фокус"
+    guidance: "Использовать outline для :focus-visible"
+  - criterion: "Навигация доступна по табу"
+    guidance: "Порядок табуляции сохраняется, элементы focusable"
+  - criterion: "Контраст текста не ниже AA"
+    guidance: "Проверить цвета текста/фона, ≥4.5:1 (или ≥3:1 для крупных заголовков)"

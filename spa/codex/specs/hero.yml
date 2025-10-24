@@ -1,0 +1,42 @@
+name: hero
+breakpoints:
+  mobile: 320
+  tablet: 768
+  desktop: 1280
+atoms:
+  - id: header-nav
+    description: "Fixed header with brand, navigation and CTA"
+    props:
+      - name: links
+        type: Link[]
+      - name: primaryCta
+        type: Action
+  - id: hero-title
+    description: "H1, H2 and supporting copy"
+    props:
+      - name: heading
+        type: string
+      - name: subheading
+        type: string
+      - name: tagline
+        type: string
+  - id: cta-group
+    description: "Primary and secondary CTAs"
+    props:
+      - name: actions
+        type: Action[]
+  - id: badge-list
+    description: "Supportive badges with icons"
+    props:
+      - name: items
+        type: Badge[]
+  - id: proof-bar
+    description: "Secondary proof points"
+    props:
+      - name: proofs
+        type: Proof[]
+  - id: hero-image
+    description: "Responsive art direction image"
+    props:
+      - name: priority
+        type: boolean
