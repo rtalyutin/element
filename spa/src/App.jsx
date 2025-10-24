@@ -1,15 +1,15 @@
 import Layout from './components/Layout';
-import News from './news/News';
-import Schedule from './schedule/Schedule';
-import Teams from './teams/Teams';
-import Tickets from './tickets/Tickets';
+import Hero from './hero/Hero';
+import Highlights from './highlights/Highlights';
+import Contacts from './contacts/Contacts';
 
 const App = () => (
   <Layout>
-    <News />
-    <Schedule />
-    <Teams />
-    <Tickets />
+    <Hero />
+    <Highlights />
+    <div id="pricing" className="anchor-placeholder" aria-hidden="true" />
+    <div id="gallery" className="anchor-placeholder" aria-hidden="true" />
+    <Contacts />
   </Layout>
 );
 
