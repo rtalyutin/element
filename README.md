@@ -1,3 +1,7 @@
+## Документация
+
+- [План реализации SPA](docs/implementation-plan.md)
+
 ## Запуск
 
 ```bash
