@@ -307,29 +307,28 @@
 }
 
 .contacts__list {
-  display: grid;
-  gap: 1.25rem;
+  display: block;
 }
 
-.contacts__row {
-  display: grid;
-  gap: 0.35rem;
-}
-
-.contacts__row dt {
+.contacts__term {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   color: var(--color-text-secondary);
+  margin: 0 0 0.35rem;
 }
 
-.contacts__row dd {
-  margin: 0;
+.contacts__definition {
+  margin: 0 0 1.25rem;
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-.contacts__row a {
+.contacts__definition:last-of-type {
+  margin-bottom: 0;
+}
+
+.contacts__definition a {
   color: var(--color-text-primary);
 }
 
