@@ -19,6 +19,8 @@ FROM node:20-alpine
 
 WORKDIR /opt/app
 
+RUN npm install -g serve
+
 COPY --from=build /opt/build/spa/build ./build
 
-CMD ["npx", "serve", "build"]
+CMD ["serve", "-s", "build", "-l", "3000"]
