@@ -1,16 +1,12 @@
-import Layout from './components/Layout';
-import Hero from './hero/Hero';
-import Highlights from './highlights/Highlights';
-import Contacts from './contacts/Contacts';
+import './styles/base.css';
 
 const App = () => (
-  <Layout>
-    <Hero />
-    <Highlights />
-    <div id="pricing" className="anchor-placeholder" aria-hidden="true" />
-    <div id="gallery" className="anchor-placeholder" aria-hidden="true" />
-    <Contacts />
-  </Layout>
+  <main className="app">
+    <section className="app__content">
+      <h1 className="app__title">Главная страница</h1>
+      <p className="app__subtitle">Заглушка для будущего контента.</p>
+    </section>
+  </main>
 );
 
 export default App;
