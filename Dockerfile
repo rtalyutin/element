@@ -21,6 +21,6 @@ WORKDIR /opt/app
 
 RUN npm install -g serve
 
-COPY --from=build /opt/build/spa/dist ./dist
+COPY --from=build /opt/build/spa/build ./build
 
-CMD ["serve", "-s", "dist", "-l", "3000"]
+CMD ["serve", "-s", "build", "-l", "3000"]
