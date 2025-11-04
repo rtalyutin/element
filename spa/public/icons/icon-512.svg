@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#1d4ed8" rx="12" />
-  <path d="M18 44L28 20h8l10 24h-6l-2-5H26l-2 5h-6zm11-11h10l-5-12-5 12z" fill="#ffffff" />
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="120" fill="url(#bg)" />
+  <path d="M144 376V136h51.2L256 248l60.8-112H368v240h-49.6V267.6L260.8 376h-9.6l-57.6-108.4V376H144z" fill="white" />
+  <defs>
+    <linearGradient id="bg" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F75FF" />
+      <stop offset="1" stop-color="#5EDCFF" />
+    </linearGradient>
+  </defs>
 </svg>
