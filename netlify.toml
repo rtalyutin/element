@@ -1,5 +1,6 @@
 [build]
-  command = "cd spa && npm ci && npm run build"
+  base = "spa"
+  command = "npm ci && npm run build"
   publish = "spa/build"
 
 [build.environment]
