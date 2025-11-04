@@ -1,6 +1,6 @@
 [build]
   base = "spa"
-  command = "npm ci && npm run build"
+  command = "npm ci --prefix spa && npm run build --prefix spa"
   publish = "spa/build"
 
 [build.environment]
