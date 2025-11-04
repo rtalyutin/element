@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders hero headline and actions 1`] = `
+<div>
+  <section
+    class="hero"
+    id="hero"
+  >
+    <div
+      class="hero__content"
+    >
+      <p
+        class="eyebrow"
+      >
+        Автосервис полного цикла
+      </p>
+      <h1
+        class="hero__title"
+      >
+        МАСТЕРСКАЯ МЯТЫЙ ЭЛЕМЕНТ
+      </h1>
+      <p
+        class="hero__subtitle"
+      >
+        От царапки до тотала — восстановим кузов, вернём блеск и уверенность на дороге.
+      </p>
+      <div
+        aria-label="Действия геро-блока"
+        class="action-buttons"
+        role="group"
+      >
+        <a
+          aria-label="Записаться на обслуживание"
+          class="button button--primary"
+          href="#booking"
+        >
+          <span
+            aria-hidden="true"
+            class="button__icon"
+          >
+            <img
+              alt=""
+              src="calendar.svg"
+            />
+          </span>
+          <span>
+            Записаться
+          </span>
+        </a>
+        <a
+          aria-label="Позвонить в Мастерскую"
+          class="button button--ghost"
+          href="tel:+74951234567"
+        >
+          <span
+            aria-hidden="true"
+            class="button__icon"
+          >
+            <img
+              alt=""
+              src="phone.svg"
+            />
+          </span>
+          <span>
+            Позвонить
+          </span>
+        </a>
+      </div>
+      <span
+        aria-hidden="true"
+        class="visually-hidden"
+        id="booking"
+      />
+      <dl
+        class="hero__metrics"
+      >
+        <div
+          class="metric"
+        >
+          <dt>
+            15 лет
+          </dt>
+          <dd>
+            опыта мастеров
+          </dd>
+        </div>
+        <div
+          class="metric"
+        >
+          <dt>
+            2 300+
+          </dt>
+          <dd>
+            восстановленных авто
+          </dd>
+        </div>
+        <div
+          class="metric"
+        >
+          <dt>
+            24/7
+          </dt>
+          <dd>
+            поддержка клиентов
+          </dd>
+        </div>
+      </dl>
+    </div>
+    <div
+      aria-hidden="true"
+      class="hero__visual"
+      role="presentation"
+    >
+      <div
+        class="hero__halo"
+      />
+      <img
+        alt=""
+        class="hero__spray"
+        src="spray-gun.svg"
+      />
+      <img
+        alt=""
+        class="hero__car"
+        src="car.svg"
+      />
+      <img
+        alt=""
+        class="hero__power"
+        src="power-unit.svg"
+      />
+    </div>
+  </section>
+</div>
+`;
