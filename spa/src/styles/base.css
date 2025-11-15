@@ -361,13 +361,11 @@ button:focus-visible {
 .hero__content {
   position: relative;
   display: flex;
-  flex-direction: column;
-  gap: clamp(0.9rem, 2.8vw, 1.6rem);
+  justify-content: center;
+  align-items: center;
   width: min(100%, var(--max-width));
   margin: 0 auto;
   padding: clamp(5rem, 18vh, 8rem) clamp(1.5rem, 6vw, 4.5rem) clamp(4rem, 16vh, 6.5rem);
-  align-items: flex-start;
-  text-align: left;
   background: linear-gradient(160deg, rgba(7, 15, 30, 0.75), rgba(7, 17, 33, 0.55));
   border-radius: calc(var(--border-radius) * 1.15);
   border: 1px solid rgba(116, 243, 255, 0.14);
@@ -377,44 +375,13 @@ button:focus-visible {
   backdrop-filter: blur(18px);
 }
 
-.hero__tagline {
-  margin: 0;
-  font-size: 0.85rem;
-  letter-spacing: 0.42em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-}
-
-.hero__title {
-  margin: 0;
-  display: grid;
-  gap: clamp(0.3rem, 1vw, 0.6rem);
-}
-
-.hero__title-brand {
-  font-family: var(--font-display);
-  font-size: clamp(2.4rem, 5vw, 4rem);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-text);
-  text-shadow: 0 18px 42px rgba(8, 24, 51, 0.65);
-}
-
-.hero__title-highlight {
-  font-family: var(--font-display);
-  font-size: clamp(3.2rem, 7vw, 5.6rem);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--color-primary);
-  text-shadow: 0 22px 60px rgba(27, 82, 146, 0.7);
-}
-
-.hero__description {
-  margin: 0;
-  max-width: 30rem;
-  color: var(--color-text-muted);
-  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
-  letter-spacing: 0.02em;
+.hero__artwork {
+  width: min(100%, 62rem);
+  max-height: clamp(18rem, 48vh, 32rem);
+  object-fit: cover;
+  border-radius: calc(var(--border-radius) * 0.9);
+  box-shadow: 0 26px 80px rgba(6, 18, 42, 0.6);
+  border: 1px solid rgba(116, 243, 255, 0.18);
 }
 
 
@@ -594,10 +561,6 @@ button:focus-visible {
     padding: clamp(4rem, 20vh, 6rem) clamp(1.5rem, 8vw, 3rem) clamp(3rem, 14vh, 5rem);
   }
 
-  .hero__description {
-    max-width: 32rem;
-  }
-
 }
 
 @media (max-width: 768px) {
@@ -683,8 +646,8 @@ button:focus-visible {
     justify-content: center;
   }
 
-  .hero__title {
-    gap: 0.4rem;
+  .hero__artwork {
+    max-height: clamp(16rem, 44vh, 26rem);
   }
 
   .footer__content {

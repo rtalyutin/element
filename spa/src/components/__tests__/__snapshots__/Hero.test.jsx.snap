@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hero renders hero headline and actions 1`] = `
+exports[`Hero renders hero media elements 1`] = `
 <div>
   <section
     class="hero"
@@ -24,58 +24,11 @@ exports[`Hero renders hero headline and actions 1`] = `
     <div
       class="hero__content"
     >
-      <p
-        class="hero__tagline"
-      >
-        Мастерская
-      </p>
-      <h1
-        class="hero__title"
-      >
-        <span
-          class="hero__title-brand"
-        >
-          Мятый элемент
-        </span>
-        <span
-          class="hero__title-highlight"
-        >
-          Кузовной ремонт
-        </span>
-      </h1>
-      <p
-        class="hero__description"
-      >
-        От царапки до тотала восстановим заводской блеск.
-      </p>
-      <div
-        aria-label="Действия геро-блока"
-        class="action-buttons"
-        role="group"
-      >
-        <a
-          aria-label="Позвонить в Мастерскую"
-          class="button button--ghost"
-          href="tel:+74951234567"
-        >
-          <span
-            aria-hidden="true"
-            class="button__icon"
-          >
-            <img
-              alt=""
-              src="phone.svg"
-            />
-          </span>
-          <span>
-            Позвонить
-          </span>
-        </a>
-      </div>
-      <span
-        aria-hidden="true"
-        class="visually-hidden"
-        id="booking"
+      <img
+        alt="Кузов автомобиля после детального ремонта в неоновом освещении"
+        class="hero__artwork"
+        loading="eager"
+        src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&w=1600&q=80"
       />
     </div>
   </section>
