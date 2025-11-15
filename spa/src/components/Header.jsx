@@ -8,8 +8,8 @@ const Header = () => (
         href="#hero"
         aria-label="МАСТЕРСКАЯ - перейти к началу страницы"
       >
-        <span className="header__brand-accent">МА</span>
-        <span>СТЕРСКАЯ</span>
+        <span className="header__brand-accent">МЯ</span>
+        <span>ТЫЙ ЭЛЕМЕНТ</span>
       </a>
       <nav className="header__nav" aria-label="Основная навигация">
         <a className="header__link" href="#services">
@@ -31,7 +31,7 @@ const Header = () => (
         </span>
         <span className="header__phone-text">
           <span className="header__phone-label">Звоните ежедневно</span>
-          <span className="header__phone-number">+7 (495) 123-45-67</span>
+          <span className="header__phone-number">+7 (980) 156-01-07</span>
         </span>
       </a>
     </div>
