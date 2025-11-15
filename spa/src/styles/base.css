@@ -152,6 +152,26 @@ button:focus-visible {
   transition: color var(--transition-base);
 }
 
+.header__link--cta {
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1b70ff, #328aff);
+  color: var(--color-bg);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  box-shadow: 0 8px 18px rgba(8, 49, 133, 0.35);
+}
+
+.header__link--cta::after {
+  display: none;
+}
+
+.header__link--cta:hover,
+.header__link--cta:focus-visible {
+  color: var(--color-bg);
+  transform: translateY(-1px);
+}
+
 .header__link::after {
   content: '';
   position: absolute;
