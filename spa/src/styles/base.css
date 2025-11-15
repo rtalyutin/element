@@ -1,28 +1,28 @@
 :root {
   color-scheme: dark;
-  --color-bg: #02050c;
-  --color-bg-elevated: rgba(9, 18, 34, 0.82);
-  --color-surface: rgba(7, 14, 27, 0.78);
-  --color-primary: #74f3ff;
-  --color-primary-strong: #2f86ff;
-  --color-accent: #9ef7ff;
-  --color-text: #f3f7ff;
-  --color-text-muted: rgba(224, 236, 255, 0.7);
-  --color-glow: rgba(116, 243, 255, 0.45);
+  --color-bg: #050506;
+  --color-bg-elevated: rgba(18, 18, 26, 0.82);
+  --color-surface: rgba(16, 16, 24, 0.78);
+  --color-primary: #d0d3db;
+  --color-primary-strong: #9b9fa9;
+  --color-accent: #e7e9ef;
+  --color-text: #f3f4f7;
+  --color-text-muted: rgba(210, 213, 222, 0.72);
+  --color-glow: rgba(208, 211, 219, 0.45);
   --gradient-page:
-    radial-gradient(circle at 12% 18%, rgba(82, 215, 255, 0.22), transparent 55%),
-    radial-gradient(circle at 88% 12%, rgba(47, 134, 255, 0.25), transparent 48%),
-    linear-gradient(180deg, #020409 0%, #050a14 38%, #03060c 100%);
+    radial-gradient(circle at 12% 18%, rgba(118, 120, 132, 0.2), transparent 55%),
+    radial-gradient(circle at 88% 12%, rgba(92, 94, 108, 0.22), transparent 48%),
+    linear-gradient(180deg, #050506 0%, #08080d 38%, #030305 100%);
   --gradient-hero:
-    linear-gradient(180deg, rgba(2, 6, 14, 0.82) 10%, rgba(4, 10, 22, 0.92) 86%),
-    radial-gradient(circle at 18% 20%, rgba(116, 243, 255, 0.32), transparent 55%),
-    radial-gradient(circle at 84% 12%, rgba(47, 134, 255, 0.28), transparent 65%);
+    linear-gradient(180deg, rgba(6, 6, 12, 0.82) 10%, rgba(10, 10, 18, 0.92) 86%),
+    radial-gradient(circle at 18% 20%, rgba(208, 211, 219, 0.28), transparent 55%),
+    radial-gradient(circle at 84% 12%, rgba(120, 123, 134, 0.22), transparent 65%);
   --font-base:
     'Manrope', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     sans-serif;
   --font-display: 'Russo One', 'Manrope', sans-serif;
-  --shadow-lg: 0 32px 110px rgba(6, 18, 42, 0.68);
-  --shadow-soft: 0 14px 44px rgba(9, 32, 67, 0.5);
+  --shadow-lg: 0 32px 110px rgba(4, 4, 12, 0.68);
+  --shadow-soft: 0 14px 44px rgba(10, 10, 20, 0.5);
   --space-xs: 0.5rem;
   --space-sm: 0.85rem;
   --space-md: 1.65rem;
@@ -57,8 +57,8 @@ body::before {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(120deg, rgba(82, 215, 255, 0.05), transparent 40%),
-    radial-gradient(circle at 50% 100%, rgba(31, 117, 255, 0.18), transparent 60%);
+    linear-gradient(120deg, rgba(138, 140, 152, 0.06), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(86, 88, 102, 0.18), transparent 60%);
   mix-blend-mode: screen;
   opacity: 0.9;
   z-index: -2;
@@ -82,7 +82,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 3px solid var(--color-primary);
   outline-offset: 4px;
   border-radius: 999px;
 }
@@ -107,9 +107,9 @@ button:focus-visible {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(22px);
-  background: linear-gradient(90deg, rgba(7, 13, 24, 0.9), rgba(7, 13, 24, 0.5));
-  border-bottom: 1px solid rgba(116, 243, 255, 0.14);
-  box-shadow: 0 20px 40px rgba(2, 6, 14, 0.6);
+  background: linear-gradient(90deg, rgba(12, 12, 20, 0.9), rgba(12, 12, 20, 0.5));
+  border-bottom: 1px solid rgba(200, 203, 212, 0.18);
+  box-shadow: 0 20px 40px rgba(4, 4, 12, 0.6);
 }
 
 .header__container {
@@ -161,9 +161,9 @@ button:focus-visible {
   height: 2px;
   background: linear-gradient(
     90deg,
-    rgba(94, 220, 255, 0),
-    rgba(94, 220, 255, 0.85),
-    rgba(94, 220, 255, 0)
+    rgba(170, 172, 184, 0),
+    rgba(170, 172, 184, 0.85),
+    rgba(170, 172, 184, 0)
   );
   transform: scaleX(0);
   transform-origin: center;
@@ -186,11 +186,11 @@ button:focus-visible {
   gap: var(--space-sm);
   padding: 0.65rem 1.5rem;
   border-radius: 999px;
-  border: 1px solid rgba(116, 243, 255, 0.35);
-  background: rgba(6, 14, 27, 0.65);
+  border: 1px solid rgba(200, 203, 212, 0.35);
+  background: rgba(14, 14, 22, 0.65);
   box-shadow:
-    inset 0 0 0 1px rgba(116, 243, 255, 0.16),
-    0 18px 45px rgba(18, 46, 84, 0.55);
+    inset 0 0 0 1px rgba(200, 203, 212, 0.16),
+    0 18px 45px rgba(20, 20, 32, 0.55);
   transition:
     transform var(--transition-base),
     box-shadow var(--transition-base),
@@ -201,9 +201,9 @@ button:focus-visible {
 .header__phone:hover,
 .header__phone:focus-visible {
   transform: translateY(-2px);
-  background: rgba(8, 18, 35, 0.85);
-  border-color: rgba(148, 249, 255, 0.6);
-  box-shadow: 0 22px 55px rgba(24, 60, 102, 0.65);
+  background: rgba(18, 18, 28, 0.85);
+  border-color: rgba(224, 226, 233, 0.6);
+  box-shadow: 0 22px 55px rgba(26, 26, 42, 0.65);
 }
 
 .header__phone-icon {
@@ -212,8 +212,8 @@ button:focus-visible {
   height: 2rem;
   padding: 0.3rem;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(148, 249, 255, 0.25), transparent 70%);
-  box-shadow: inset 0 0 12px rgba(148, 249, 255, 0.25);
+  background: radial-gradient(circle at 30% 30%, rgba(210, 213, 222, 0.25), transparent 70%);
+  box-shadow: inset 0 0 12px rgba(210, 213, 222, 0.25);
 }
 
 .header__phone-icon img {
@@ -254,8 +254,8 @@ button:focus-visible {
   line-height: 1;
   background: transparent;
   color: var(--color-text);
-  border: 1px solid rgba(116, 243, 255, 0.35);
-  box-shadow: inset 0 0 0 1px rgba(148, 249, 255, 0.12);
+  border: 1px solid rgba(200, 203, 212, 0.32);
+  box-shadow: inset 0 0 0 1px rgba(210, 213, 222, 0.12);
   transition:
     transform var(--transition-base),
     box-shadow var(--transition-base),
@@ -263,16 +263,16 @@ button:focus-visible {
 }
 
 .button--primary {
-  background: linear-gradient(135deg, rgba(116, 243, 255, 0.95), rgba(47, 134, 255, 0.95));
+  background: linear-gradient(135deg, rgba(224, 226, 233, 0.95), rgba(144, 147, 158, 0.95));
   border: none;
   box-shadow:
-    0 24px 48px rgba(24, 72, 132, 0.5),
+    0 24px 48px rgba(28, 28, 44, 0.5),
     inset 0 0 0 1px rgba(255, 255, 255, 0.16);
 }
 
 .button--ghost {
-  background: rgba(5, 12, 23, 0.65);
-  border-color: rgba(116, 243, 255, 0.2);
+  background: rgba(12, 12, 20, 0.65);
+  border-color: rgba(200, 203, 212, 0.2);
 }
 
 .button--sm {
@@ -283,12 +283,12 @@ button:focus-visible {
 .button:hover,
 .button:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 20px 48px rgba(27, 82, 146, 0.5);
+  box-shadow: 0 20px 48px rgba(30, 30, 46, 0.5);
 }
 
 .button--ghost:hover,
 .button--ghost:focus-visible {
-  background: rgba(7, 16, 30, 0.8);
+  background: rgba(16, 16, 26, 0.8);
 }
 
 .button__icon {
@@ -318,7 +318,7 @@ button:focus-visible {
   align-items: center;
   justify-content: center;
   padding: clamp(3rem, 12vh, 6.5rem) 0;
-  background: rgba(4, 10, 22, 0.9);
+  background: rgba(10, 10, 18, 0.9);
   border-radius: 0;
   overflow: hidden;
   box-shadow: var(--shadow-lg);
@@ -333,7 +333,7 @@ button:focus-visible {
   overflow: hidden;
   pointer-events: none;
   z-index: -1;
-  background: #02060f;
+  background: #050508;
 }
 
 .hero__background-video {
@@ -344,7 +344,7 @@ button:focus-visible {
   object-fit: cover;
   object-position: center;
   border: none;
-  filter: saturate(0.8) brightness(0.58);
+  filter: saturate(0.75) brightness(0.58);
 }
 
 .hero__background::after {
@@ -352,9 +352,9 @@ button:focus-visible {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(1, 3, 9, 0.78) 0%, rgba(3, 8, 18, 0.92) 72%),
-    radial-gradient(circle at 12% 16%, rgba(80, 160, 255, 0.25), transparent 55%),
-    radial-gradient(circle at 86% 10%, rgba(47, 134, 255, 0.2), transparent 62%);
+    linear-gradient(180deg, rgba(4, 4, 10, 0.78) 0%, rgba(8, 8, 16, 0.92) 72%),
+    radial-gradient(circle at 12% 16%, rgba(208, 211, 219, 0.24), transparent 55%),
+    radial-gradient(circle at 86% 10%, rgba(128, 130, 142, 0.22), transparent 62%);
   opacity: 1;
 }
 
@@ -366,12 +366,12 @@ button:focus-visible {
   width: min(100%, var(--max-width));
   margin: 0 auto;
   padding: clamp(5rem, 18vh, 8rem) clamp(1.5rem, 6vw, 4.5rem) clamp(4rem, 16vh, 6.5rem);
-  background: linear-gradient(160deg, rgba(7, 15, 30, 0.75), rgba(7, 17, 33, 0.55));
+  background: linear-gradient(160deg, rgba(12, 12, 22, 0.75), rgba(12, 12, 24, 0.55));
   border-radius: calc(var(--border-radius) * 1.15);
-  border: 1px solid rgba(116, 243, 255, 0.14);
+  border: 1px solid rgba(200, 203, 212, 0.16);
   box-shadow:
-    0 36px 90px rgba(6, 18, 42, 0.65),
-    inset 0 1px 0 rgba(148, 249, 255, 0.12);
+    0 36px 90px rgba(6, 6, 16, 0.65),
+    inset 0 1px 0 rgba(210, 213, 222, 0.12);
   backdrop-filter: blur(18px);
 }
 
@@ -380,8 +380,8 @@ button:focus-visible {
   max-height: clamp(18rem, 48vh, 32rem);
   object-fit: cover;
   border-radius: calc(var(--border-radius) * 0.9);
-  box-shadow: 0 26px 80px rgba(6, 18, 42, 0.6);
-  border: 1px solid rgba(116, 243, 255, 0.18);
+  box-shadow: 0 26px 80px rgba(6, 6, 16, 0.6);
+  border: 1px solid rgba(200, 203, 212, 0.18);
 }
 
 
@@ -409,7 +409,7 @@ button:focus-visible {
 .service-badge__icon {
   width: 64px;
   height: 64px;
-  filter: drop-shadow(0 12px 30px rgba(31, 117, 255, 0.4));
+  filter: drop-shadow(0 12px 30px rgba(42, 42, 58, 0.4));
 }
 
 .service-badge__title {
@@ -428,7 +428,7 @@ button:focus-visible {
 .glow-panel {
   background: var(--color-surface);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(94, 220, 255, 0.16);
+  border: 1px solid rgba(170, 172, 184, 0.16);
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(var(--blur-strong));
   transition:
@@ -439,7 +439,7 @@ button:focus-visible {
 .glow-panel:hover,
 .glow-panel:focus-within {
   transform: translateY(-4px);
-  box-shadow: 0 30px 60px rgba(31, 117, 255, 0.35);
+  box-shadow: 0 30px 60px rgba(34, 34, 52, 0.35);
 }
 
 .section-placeholder {
@@ -448,7 +448,7 @@ button:focus-visible {
   padding: var(--space-lg);
   display: grid;
   gap: var(--space-sm);
-  background: rgba(9, 17, 32, 0.6);
+  background: rgba(16, 16, 26, 0.6);
 }
 
 .section-placeholder h2 {
@@ -468,9 +468,9 @@ button:focus-visible {
 .footer {
   margin-top: auto;
   padding: clamp(2rem, 4vw, 4rem) clamp(1.5rem, 5vw, 4rem) clamp(2.5rem, 6vw, 4.5rem);
-  background: rgba(5, 11, 22, 0.88);
-  border-top: 1px solid rgba(94, 220, 255, 0.12);
-  box-shadow: inset 0 1px 0 rgba(94, 220, 255, 0.08);
+  background: rgba(8, 8, 16, 0.88);
+  border-top: 1px solid rgba(170, 172, 184, 0.12);
+  box-shadow: inset 0 1px 0 rgba(170, 172, 184, 0.08);
 }
 
 .footer__content {
