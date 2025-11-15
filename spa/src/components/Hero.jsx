@@ -39,7 +39,7 @@ const Hero = () => (
     </div>
     <div className="hero__visual" role="presentation" aria-hidden="true">
       <iframe
-        src="https://www.youtube.com/embed/6pvhLJ3d0Xk?autoplay=1&mute=1&loop=1&controls=0&playlist=6pvhLJ3d0Xk"
+        src="https://youtu.be/o7GPNI3Okb0?autoplay=1&mute=1&loop=1&controls=0&playlist=6pvhLJ3d0Xk"
         title="Видео процесса кузовного ремонта"
         allow="autoplay; fullscreen"
         allowFullScreen
