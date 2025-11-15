@@ -6,11 +6,15 @@ import beforeAfterIcon from '../assets/before-after.svg';
 const Hero = () => (
   <section className="hero" id="hero">
     <div className="hero__background" role="presentation" aria-hidden="true">
-      <iframe
+      <video
+        className="hero__background-video"
         src="https://s3.twcstorage.ru/e9dc5ea4-6dc9267d-85ca-4ae9-a41f-2895e9542a04/video_2025-11-15_18-06-54.mp4"
-        title="Видео процесса кузовного ремонта"
-        allow="autoplay; fullscreen"
-        allowFullScreen
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        aria-hidden="true"
       />
     </div>
     <div className="hero__content">
