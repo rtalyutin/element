@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import Hero from '../Hero';
 
 describe('Hero', () => {
-  it('renders hero headline and actions', () => {
+  it('renders hero media elements', () => {
     const { container } = render(<Hero />);
 
     const backgroundVideo = container.querySelector('video');
@@ -16,11 +16,9 @@ describe('Hero', () => {
     expect(backgroundVideo).toHaveAttribute('preload', 'auto');
 
     expect(
-      screen.getByRole('heading', { name: /мятый элемент кузовной ремонт/i }),
-    ).toBeInTheDocument();
-    expect(screen.getByText(/мастерская/i)).toBeInTheDocument();
-    expect(
-      screen.getByRole('group', { name: /действия геро-блока/i }),
+      screen.getByRole('img', {
+        name: /кузов автомобиля после детального ремонта в неоновом освещении/i,
+      }),
     ).toBeInTheDocument();
 
     expect(container).toMatchSnapshot();

@@ -1,5 +1,3 @@
-import ActionButtons from './ActionButtons';
-
 const Hero = () => (
   <section className="hero" id="hero">
     <div className="hero__background" role="presentation" aria-hidden="true">
@@ -15,16 +13,12 @@ const Hero = () => (
       />
     </div>
     <div className="hero__content">
-      <p className="hero__tagline">Мастерская</p>
-      <h1 className="hero__title">
-        <span className="hero__title-brand">Мятый элемент</span>
-        <span className="hero__title-highlight">Кузовной ремонт</span>
-      </h1>
-      <p className="hero__description">
-        От царапки до тотала восстановим заводской блеск.
-      </p>
-      <ActionButtons />
-      <span id="booking" className="visually-hidden" aria-hidden="true" />
+      <img
+        className="hero__artwork"
+        src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&w=1600&q=80"
+        alt="Кузов автомобиля после детального ремонта в неоновом освещении"
+        loading="eager"
+      />
     </div>
   </section>
 );
