@@ -657,7 +657,7 @@ button:focus-visible {
   }
 
   .action-buttons .button {
-    flex: 1 1 45%;
+    flex: 1 1 100%;
   }
 
   .hero__features {

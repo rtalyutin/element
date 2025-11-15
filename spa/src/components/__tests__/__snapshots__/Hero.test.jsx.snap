@@ -39,24 +39,6 @@ exports[`Hero renders hero headline and actions 1`] = `
         role="group"
       >
         <a
-          aria-label="Записаться на обслуживание"
-          class="button button--primary"
-          href="#booking"
-        >
-          <span
-            aria-hidden="true"
-            class="button__icon"
-          >
-            <img
-              alt=""
-              src="calendar.svg"
-            />
-          </span>
-          <span>
-            Записаться
-          </span>
-        </a>
-        <a
           aria-label="Позвонить в Мастерскую"
           class="button button--ghost"
           href="tel:+74951234567"
@@ -139,29 +121,11 @@ exports[`Hero renders hero headline and actions 1`] = `
       class="hero__visual"
       role="presentation"
     >
-      <div
-        class="hero__halo"
-      />
-      <span
-        class="hero__hose"
-      />
-      <span
-        class="hero__spark"
-      />
-      <img
-        alt=""
-        class="hero__spray"
-        src="spray-gun.svg"
-      />
-      <img
-        alt=""
-        class="hero__car"
-        src="car.svg"
-      />
-      <img
-        alt=""
-        class="hero__power"
-        src="power-unit.svg"
+      <iframe
+        allow="autoplay; fullscreen"
+        allowfullscreen=""
+        src="https://s3.twcstorage.ru/e9dc5ea4-6dc9267d-85ca-4ae9-a41f-2895e9542a04/video_2025-11-15_18-06-54.mp4"
+        title="Видео процесса кузовного ремонта"
       />
     </div>
   </section>
