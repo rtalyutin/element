@@ -1,7 +1,4 @@
 import ActionButtons from './ActionButtons';
-import car from '../assets/car.svg';
-import sprayGun from '../assets/spray-gun.svg';
-import powerUnit from '../assets/power-unit.svg';
 import geometryIcon from '../assets/geometry.svg';
 import insuranceIcon from '../assets/insurance.svg';
 import beforeAfterIcon from '../assets/before-after.svg';
@@ -41,12 +38,12 @@ const Hero = () => (
       </ul>
     </div>
     <div className="hero__visual" role="presentation" aria-hidden="true">
-      <div className="hero__halo" />
-      <span className="hero__hose" />
-      <span className="hero__spark" />
-      <img className="hero__spray" src={sprayGun} alt="" />
-      <img className="hero__car" src={car} alt="" />
-      <img className="hero__power" src={powerUnit} alt="" />
+      <iframe
+        src="https://www.youtube.com/embed/6pvhLJ3d0Xk?autoplay=1&mute=1&loop=1&controls=0&playlist=6pvhLJ3d0Xk"
+        title="Видео процесса кузовного ремонта"
+        allow="autoplay; fullscreen"
+        allowFullScreen
+      />
     </div>
   </section>
 );
