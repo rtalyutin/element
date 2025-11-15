@@ -1,3 +1,5 @@
+import phoneIcon from '../assets/phone.svg';
+
 const Header = () => (
   <header className="header" role="banner">
     <div className="header__container">
@@ -23,12 +25,14 @@ const Header = () => (
           Контакты
         </a>
       </nav>
-      <a
-        className="button button--primary button--sm"
-        href="#booking"
-        aria-label="Открыть форму заказа"
-      >
-        Заказать
+      <a className="header__phone" href="tel:+74951234567">
+        <span className="header__phone-icon" aria-hidden="true">
+          <img src={phoneIcon} alt="" />
+        </span>
+        <span className="header__phone-text">
+          <span className="header__phone-label">Звоните ежедневно</span>
+          <span className="header__phone-number">+7 (495) 123-45-67</span>
+        </span>
       </a>
     </div>
   </header>
