@@ -23,7 +23,11 @@ const App = () => {
       typeof navigator.userAgent === 'string' &&
       navigator.userAgent.includes('jsdom');
 
-    if (!isJSDOM && typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+    if (
+      !isJSDOM &&
+      typeof window !== 'undefined' &&
+      typeof window.scrollTo === 'function'
+    ) {
       window.scrollTo(0, 0);
     }
   }, [location]);
