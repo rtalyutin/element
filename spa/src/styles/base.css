@@ -1,6 +1,6 @@
 :root {
   color-scheme: dark;
-  --color-bg: #050506;
+  --color-bg: #101519;
   --color-bg-elevated: rgba(18, 18, 26, 0.82);
   --color-surface: rgba(16, 16, 24, 0.78);
   --color-primary: #d0d3db;
@@ -12,7 +12,7 @@
   --gradient-page:
     radial-gradient(circle at 12% 18%, rgba(118, 120, 132, 0.2), transparent 55%),
     radial-gradient(circle at 88% 12%, rgba(92, 94, 108, 0.22), transparent 48%),
-    linear-gradient(180deg, #050506 0%, #08080d 38%, #030305 100%);
+    linear-gradient(180deg, #101519 0%, #141d24 38%, #0b1217 100%);
   --gradient-hero:
     linear-gradient(180deg, rgba(6, 6, 12, 0.82) 10%, rgba(10, 10, 18, 0.92) 86%),
     radial-gradient(circle at 18% 20%, rgba(208, 211, 219, 0.28), transparent 55%),
