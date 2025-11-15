@@ -15,7 +15,7 @@ const Hero = () => (
     <div className="hero__content">
       <img
         className="hero__artwork"
-        src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&w=1600&q=80"
+        src="https://s3.twcstorage.ru/e9dc5ea4-6dc9267d-85ca-4ae9-a41f-2895e9542a04/photo_2025-11-03_20-57-56.jpg"
         alt="Кузов автомобиля после детального ремонта в неоновом освещении"
         loading="eager"
       />
