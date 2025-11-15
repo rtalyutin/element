@@ -1,7 +1,7 @@
 [build]
   base = "spa"
   command = "npm ci && npm run build"
-  publish = "spa/build"
+  publish = "spa/public"
 
 [build.environment]
   NODE_VERSION = "20"
