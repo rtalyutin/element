@@ -1,7 +1,4 @@
 import ActionButtons from './ActionButtons';
-import geometryIcon from '../assets/geometry.svg';
-import insuranceIcon from '../assets/insurance.svg';
-import beforeAfterIcon from '../assets/before-after.svg';
 
 const Hero = () => (
   <section className="hero" id="hero">
@@ -28,26 +25,6 @@ const Hero = () => (
       </p>
       <ActionButtons />
       <span id="booking" className="visually-hidden" aria-hidden="true" />
-      <ul className="hero__features" aria-label="Ключевые направления работы">
-        <li className="hero__feature">
-          <span className="hero__feature-icon" aria-hidden="true">
-            <img src={geometryIcon} alt="" />
-          </span>
-          <span>Ремонт геометрии</span>
-        </li>
-        <li className="hero__feature">
-          <span className="hero__feature-icon" aria-hidden="true">
-            <img src={insuranceIcon} alt="" />
-          </span>
-          <span>Страховые кейсы</span>
-        </li>
-        <li className="hero__feature">
-          <span className="hero__feature-icon" aria-hidden="true">
-            <img src={beforeAfterIcon} alt="" />
-          </span>
-          <span>Фото до/после</span>
-        </li>
-      </ul>
     </div>
   </section>
 );

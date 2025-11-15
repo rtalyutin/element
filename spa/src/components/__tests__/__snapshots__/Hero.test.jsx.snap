@@ -77,74 +77,7 @@ exports[`Hero renders hero headline and actions 1`] = `
         class="visually-hidden"
         id="booking"
       />
-      <ul
-        aria-label="Ключевые направления работы"
-        class="hero__features"
-      >
-        <li
-          class="hero__feature"
-        >
-          <span
-            aria-hidden="true"
-            class="hero__feature-icon"
-          >
-            <img
-              alt=""
-              src="geometry.svg"
-            />
-          </span>
-          <span>
-            Ремонт геометрии
-          </span>
-        </li>
-        <li
-          class="hero__feature"
-        >
-          <span
-            aria-hidden="true"
-            class="hero__feature-icon"
-          >
-            <img
-              alt=""
-              src="insurance.svg"
-            />
-          </span>
-          <span>
-            Страховые кейсы
-          </span>
-        </li>
-        <li
-          class="hero__feature"
-        >
-          <span
-            aria-hidden="true"
-            class="hero__feature-icon"
-          >
-            <img
-              alt=""
-              src="before-after.svg"
-            />
-          </span>
-          <span>
-            Фото до/после
-          </span>
-        </li>
-      </ul>
     </div>
-
-    <div
-      aria-hidden="true"
-      class="hero__visual"
-      role="presentation"
-    >
-      <iframe
-        allow="autoplay; fullscreen"
-        allowfullscreen=""
-        src="https://s3.twcstorage.ru/e9dc5ea4-6dc9267d-85ca-4ae9-a41f-2895e9542a04/video_2025-11-15_18-06-54.mp4"
-        title="Видео процесса кузовного ремонта"
-      />
-    </div>
-
   </section>
 </div>
 `;
