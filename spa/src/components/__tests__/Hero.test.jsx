@@ -7,8 +7,9 @@ describe('Hero', () => {
     const { container } = render(<Hero />);
 
     expect(
-      screen.getByRole('heading', { name: /мастерская мятый элемент/i }),
+      screen.getByRole('heading', { name: /мятый элемент кузовной ремонт/i }),
     ).toBeInTheDocument();
+    expect(screen.getByText(/мастерская/i)).toBeInTheDocument();
     expect(
       screen.getByRole('group', { name: /действия геро-блока/i }),
     ).toBeInTheDocument();
