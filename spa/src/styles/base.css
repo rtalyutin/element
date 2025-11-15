@@ -365,7 +365,7 @@ button:focus-visible {
   align-items: center;
   width: min(100%, var(--max-width));
   margin: 0 auto;
-  padding: clamp(5rem, 18vh, 8rem) clamp(1.5rem, 6vw, 4.5rem) clamp(4rem, 16vh, 6.5rem);
+  padding: 0;
   background: linear-gradient(160deg, rgba(12, 12, 22, 0.75), rgba(12, 12, 24, 0.55));
   border-radius: calc(var(--border-radius) * 1.15);
   border: 1px solid rgba(200, 203, 212, 0.16);
@@ -558,7 +558,7 @@ button:focus-visible {
   .hero__content {
     align-items: center;
     text-align: center;
-    padding: clamp(4rem, 20vh, 6rem) clamp(1.5rem, 8vw, 3rem) clamp(3rem, 14vh, 5rem);
+    padding: 0;
   }
 
 }
@@ -606,7 +606,7 @@ button:focus-visible {
   }
 
   .hero__content {
-    padding: clamp(3.25rem, 26vh, 4.5rem) clamp(1.25rem, 8vw, 2rem) clamp(2.5rem, 18vh, 4rem);
+    padding: 0;
   }
 
   .action-buttons {
