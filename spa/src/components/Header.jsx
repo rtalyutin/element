@@ -40,9 +40,7 @@ const Header = () => {
           <NavLink
             to="/visualizations"
             className={({ isActive }) =>
-              `header__link header__link--cta${
-                isActive ? ' header__link--active' : ''
-              }`
+              `header__link header__link--cta${isActive ? ' header__link--active' : ''}`
             }
           >
             Визуализации
