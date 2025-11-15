@@ -5,6 +5,14 @@ import beforeAfterIcon from '../assets/before-after.svg';
 
 const Hero = () => (
   <section className="hero" id="hero">
+    <div className="hero__background" role="presentation" aria-hidden="true">
+      <iframe
+        src="https://youtu.be/o7GPNI3Okb0?autoplay=1&mute=1&loop=1&controls=0&playlist=6pvhLJ3d0Xk"
+        title="Видео процесса кузовного ремонта"
+        allow="autoplay; fullscreen"
+        allowFullScreen
+      />
+    </div>
     <div className="hero__content">
       <p className="hero__tagline">Мастерская</p>
       <h1 className="hero__title">
@@ -45,6 +53,7 @@ const Hero = () => (
         allowFullScreen
       />
     </div>
+
   </section>
 );
 
