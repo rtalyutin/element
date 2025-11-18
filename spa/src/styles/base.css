@@ -337,6 +337,7 @@ button:focus-visible {
   margin-top: var(--space-md);
 }
 
+
 .hero {
   position: relative;
   width: 100%;
@@ -728,6 +729,10 @@ button:focus-visible {
   }
 
   .hero__background {
+    display: none;
+  }
+
+  .hero__background-video {
     display: none;
   }
 
