@@ -12,12 +12,14 @@ const Hero = () => (
         aria-hidden="true"
       />
     </div>
-    <img
-      className="hero__artwork"
-      src="https://s3.twcstorage.ru/e9dc5ea4-6dc9267d-85ca-4ae9-a41f-2895e9542a04/photo_2025-11-03_20-57-56.jpg"
-      alt="Кузов автомобиля после детального ремонта в неоновом освещении"
-      loading="eager"
-    />
+    <div className="hero__image-wrapper">
+      <img
+        className="hero__artwork"
+        src="https://s3.twcstorage.ru/e9dc5ea4-6dc9267d-85ca-4ae9-a41f-2895e9542a04/photo_2025-11-03_20-57-56.jpg"
+        alt="Кузов автомобиля после детального ремонта в неоновом освещении"
+        loading="eager"
+      />
+    </div>
   </section>
 );
 

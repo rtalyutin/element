@@ -353,6 +353,14 @@ button:focus-visible {
   isolation: isolate;
 }
 
+.hero__image-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .hero__background {
   position: absolute;
   inset: 0;
@@ -665,6 +673,25 @@ button:focus-visible {
 
   .hero {
     padding: clamp(2rem, 15vh, 4.5rem) 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .hero__background {
+    display: none;
+  }
+
+  .hero__image-wrapper {
+    width: 100%;
+  }
+
+  .hero__artwork {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    border-radius: 0;
+    object-fit: cover;
   }
 
 }
