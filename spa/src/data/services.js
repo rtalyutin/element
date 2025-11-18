@@ -2,6 +2,7 @@ import geometry from '../assets/geometry.svg';
 import detailing from '../assets/detailing.svg';
 import sprayGun from '../assets/spray-gun.svg';
 import car from '../assets/car.svg';
+import gallerySlides from './gallerySlides';
 
 const servicesData = [
   {
@@ -34,6 +35,7 @@ const servicesData = [
 const services = servicesData.map((service) => ({
   ...service,
   sectionId: `gallery-${service.slug}`,
+  slides: gallerySlides[service.slug] ?? [],
 }));
 
 export default services;

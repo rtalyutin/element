@@ -1,0 +1,19 @@
+<svg width="360" height="220" viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="archesGradientA" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C13584" />
+      <stop offset="100%" stop-color="#E1306C" />
+    </linearGradient>
+  </defs>
+  <rect width="360" height="220" rx="32" fill="#0D0415" />
+  <g stroke="url(#archesGradientA)" stroke-width="4">
+    <path d="M40 200C60 80 300 80 320 200" fill="none" />
+    <path d="M60 200C80 100 280 100 300 200" fill="none" opacity="0.8" />
+    <path d="M80 200C100 120 260 120 280 200" fill="none" opacity="0.6" />
+  </g>
+  <g fill="#FFD2F2">
+    <rect x="70" y="90" width="60" height="60" rx="12" opacity="0.5" />
+    <rect x="150" y="70" width="80" height="80" rx="16" opacity="0.4" />
+    <rect x="250" y="90" width="60" height="60" rx="12" opacity="0.5" />
+  </g>
+</svg>
