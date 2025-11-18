@@ -1,4 +1,5 @@
 import services from '../data/services';
+import GalleryCarousel from '../components/GalleryCarousel';
 import '../styles/base.css';
 
 const Gallery = () => (
@@ -30,6 +31,7 @@ const Gallery = () => (
             </h2>
             <p className="gallery__section-description">{service.description}</p>
           </div>
+          <GalleryCarousel slides={service.slides} sectionLabel={service.label} />
         </article>
       ))}
     </div>

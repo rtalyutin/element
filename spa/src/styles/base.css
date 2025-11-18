@@ -605,6 +605,96 @@ button:focus-visible {
   max-width: 60ch;
 }
 
+.gallery-carousel {
+  margin-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.gallery-carousel__viewport {
+  overflow: hidden;
+  border-radius: calc(var(--border-radius) * 1.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gallery-carousel__track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.gallery-carousel__slide {
+  min-width: 100%;
+  display: grid;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: rgba(10, 14, 24, 0.8);
+}
+
+.gallery-carousel__slide img {
+  width: 100%;
+  border-radius: calc(var(--border-radius) * 1.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: var(--shadow-soft);
+}
+
+.gallery-carousel__slide-eyebrow {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.gallery-carousel__slide-caption {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.gallery-carousel__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.gallery-carousel__button {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: var(--color-text);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  transition: background var(--transition-base), color var(--transition-base);
+}
+
+.gallery-carousel__button:hover,
+.gallery-carousel__button:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-primary);
+}
+
+.gallery-carousel__dots {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.gallery-carousel__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  transition: background var(--transition-base), border var(--transition-base);
+}
+
+.gallery-carousel__dot.is-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
 .footer {
   margin-top: auto;
   padding: clamp(2rem, 4vw, 4rem) clamp(1.5rem, 5vw, 4rem) clamp(2.5rem, 6vw, 4.5rem);
