@@ -1,8 +1,7 @@
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import phoneIcon from '../assets/phone.svg';
 
 const anchorLinks = [
-  { hash: '#services', label: 'Услуги' },
   { hash: '#pricing', label: 'Цены' },
   { hash: '#gallery', label: 'Галерея' },
   { hash: '#contacts', label: 'Контакты' },
@@ -37,14 +36,6 @@ const Header = () => {
               {link.label}
             </Link>
           ))}
-          <NavLink
-            to="/visualizations"
-            className={({ isActive }) =>
-              `header__link header__link--cta${isActive ? ' header__link--active' : ''}`
-            }
-          >
-            Визуализации
-          </NavLink>
         </nav>
         <a className="header__phone" href="tel:+74951234567">
           <span className="header__phone-icon" aria-hidden="true">
