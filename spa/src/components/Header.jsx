@@ -1,17 +1,27 @@
 import { Link, useLocation } from 'react-router-dom';
 import phoneIcon from '../assets/phone.svg';
 
-const anchorLinks = [
-  { hash: '#pricing', label: 'Цены' },
-  { hash: '#gallery', label: 'Галерея' },
-  { hash: '#contacts', label: 'Контакты' },
+const navigationLinks = [
+  { to: { pathname: '/', hash: '#pricing' }, label: 'Цены' },
+  { to: '/gallery', label: 'Галерея' },
+  { to: { pathname: '/', hash: '#contacts' }, label: 'Контакты' },
 ];
 
 const Header = () => {
   const location = useLocation();
 
-  const getAnchorClassName = (hash) => {
-    const isActive = location.pathname === '/' && location.hash === hash;
+  const getLinkClassName = (link) => {
+    const { to } = link;
+    const isAnchorTarget = typeof to === 'object' && typeof to.hash === 'string';
+
+    let isActive = false;
+
+    if (isAnchorTarget) {
+      isActive = location.pathname === '/' && location.hash === to.hash;
+    } else if (typeof to === 'string') {
+      isActive = location.pathname === to;
+    }
+
     return `header__link${isActive ? ' header__link--active' : ''}`;
   };
 
@@ -27,12 +37,8 @@ const Header = () => {
           <span>ТЫЙ ЭЛЕМЕНТ</span>
         </Link>
         <nav className="header__nav" aria-label="Основная навигация">
-          {anchorLinks.map((link) => (
-            <Link
-              key={link.hash}
-              className={getAnchorClassName(link.hash)}
-              to={{ pathname: '/', hash: link.hash }}
-            >
+          {navigationLinks.map((link) => (
+            <Link key={link.label} className={getLinkClassName(link)} to={link.to}>
               {link.label}
             </Link>
           ))}
