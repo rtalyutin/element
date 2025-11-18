@@ -353,6 +353,14 @@ button:focus-visible {
   isolation: isolate;
 }
 
+.hero__image-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .hero__background {
   position: absolute;
   inset: 0;
@@ -664,7 +672,34 @@ button:focus-visible {
   }
 
   .hero {
-    padding: clamp(2rem, 15vh, 4.5rem) 0;
+    display: block;
+    padding: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .hero__background {
+    display: none;
+  }
+
+  .hero__image-wrapper {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  .hero__artwork {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    max-height: none;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    object-fit: cover;
+    object-position: center;
   }
 
 }
@@ -709,10 +744,6 @@ button:focus-visible {
   .header__phone {
     width: 100%;
     justify-content: center;
-  }
-
-  .hero__artwork {
-    max-height: clamp(16rem, 44vh, 26rem);
   }
 
   .footer__content {

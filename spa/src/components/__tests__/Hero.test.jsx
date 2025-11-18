@@ -3,8 +3,11 @@ import { render, screen } from '@testing-library/react';
 import Hero from '../Hero';
 
 describe('Hero', () => {
-  it('renders hero media elements', () => {
+  it('renders hero media elements with responsive hooks', () => {
     const { container } = render(<Hero />);
+
+    const backgroundWrapper = container.querySelector('.hero__background');
+    expect(backgroundWrapper).toBeInTheDocument();
 
     const backgroundVideo = container.querySelector('video');
 
@@ -15,11 +18,13 @@ describe('Hero', () => {
     expect(backgroundVideo.playsInline).toBe(true);
     expect(backgroundVideo).toHaveAttribute('preload', 'auto');
 
-    expect(
-      screen.getByRole('img', {
-        name: /кузов автомобиля после детального ремонта в неоновом освещении/i,
-      }),
-    ).toBeInTheDocument();
+    const artwork = screen.getByRole('img', {
+      name: /кузов автомобиля после детального ремонта в неоновом освещении/i,
+    });
+
+    expect(artwork).toBeInTheDocument();
+    expect(container.querySelector('.hero__image-wrapper')).toContainElement(artwork);
+    expect(artwork).toHaveClass('hero__artwork');
 
     expect(container).toMatchSnapshot();
   });
