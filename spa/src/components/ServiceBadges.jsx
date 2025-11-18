@@ -1,28 +1,29 @@
 import geometry from '../assets/geometry.svg';
 import detailing from '../assets/detailing.svg';
-import insurance from '../assets/insurance.svg';
-import beforeAfter from '../assets/before-after.svg';
+import sprayGun from '../assets/spray-gun.svg';
+import car from '../assets/car.svg';
 
 const services = [
   {
+    icon: sprayGun,
+    label: 'Покраска авто',
+    description: 'Подготовка и профессиональная покраска кузова с подбором оттенка.',
+  },
+  {
     icon: geometry,
-    label: 'Ремонт геометрии',
-    description: 'Вытяжка кузова, стапель и усиленные работы',
+    label: 'Замена арок и порогов',
+    description: 'Восстанавливаем и заменяем арки и пороги с антикоррозийной защитой.',
+  },
+  {
+    icon: car,
+    label: 'Кузовной ремонт и покраска коммерческого транспорта',
+    description:
+      'Полный цикл кузовного ремонта и окраски для фургонов, пикапов и спецтехники.',
   },
   {
     icon: detailing,
-    label: 'Детейлинг',
-    description: 'Полировка, защитные покрытия и уход',
-  },
-  {
-    icon: insurance,
-    label: 'Страховые кейсы',
-    description: 'Берём весь документооборот на себя',
-  },
-  {
-    icon: beforeAfter,
-    label: 'Фото до/после',
-    description: 'Прозрачный отчёт по этапам ремонта',
+    label: 'Локальный ремонт и покраска',
+    description: 'Точечно устраняем сколы и вмятины с аккуратной локальной покраской.',
   },
 ];
 
