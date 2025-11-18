@@ -337,13 +337,16 @@ button:focus-visible {
   margin-top: var(--space-md);
 }
 
+
 .hero {
   position: relative;
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
-  display: block;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(3rem, 12vh, 6.5rem) 0;
   background: rgba(10, 10, 18, 0.9);
   border-radius: 0;
   overflow: hidden;
@@ -355,11 +358,8 @@ button:focus-visible {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 100vh;
-  height: 100dvh;
   display: flex;
   justify-content: center;
-  object-fit: cover;
 }
 
 .hero__background {
@@ -374,7 +374,14 @@ button:focus-visible {
 }
 
 .hero__background-video {
-  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: none;
+  filter: saturate(0.75) brightness(0.58);
 }
 
 .hero__background::after {
@@ -389,9 +396,8 @@ button:focus-visible {
 }
 
 .hero__artwork {
-  width: 100%;
-  height: 100vh;
-  height: 100dvh;
+  width: min(100%, 62rem);
+  max-height: clamp(18rem, 48vh, 32rem);
   object-fit: cover;
   border-radius: calc(var(--border-radius) * 0.9);
   box-shadow: 0 26px 80px rgba(6, 6, 16, 0.6);
@@ -723,6 +729,10 @@ button:focus-visible {
   }
 
   .hero__background {
+    display: none;
+  }
+
+  .hero__background-video {
     display: none;
   }
 
