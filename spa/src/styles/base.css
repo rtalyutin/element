@@ -548,6 +548,55 @@ button:focus-visible {
   max-width: 48ch;
 }
 
+.gallery {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.gallery__intro {
+  display: grid;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+}
+
+.gallery__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.gallery__description {
+  margin: 0;
+  max-width: 60ch;
+  color: var(--color-text-muted);
+}
+
+.gallery__sections {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.gallery__section {
+  padding: var(--space-lg);
+}
+
+.gallery__section-title {
+  margin: 0;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.gallery__section-description {
+  margin: var(--space-sm) 0 0;
+  color: var(--color-text-muted);
+  max-width: 60ch;
+}
+
 .footer {
   margin-top: auto;
   padding: clamp(2rem, 4vw, 4rem) clamp(1.5rem, 5vw, 4rem) clamp(2.5rem, 6vw, 4.5rem);

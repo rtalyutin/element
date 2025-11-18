@@ -1,31 +1,4 @@
-import geometry from '../assets/geometry.svg';
-import detailing from '../assets/detailing.svg';
-import sprayGun from '../assets/spray-gun.svg';
-import car from '../assets/car.svg';
-
-const services = [
-  {
-    icon: sprayGun,
-    label: 'Покраска авто',
-    description: 'Подготовка и профессиональная покраска кузова с подбором оттенка.',
-  },
-  {
-    icon: geometry,
-    label: 'Замена арок и порогов',
-    description: 'Восстанавливаем и заменяем арки и пороги с антикоррозийной защитой.',
-  },
-  {
-    icon: car,
-    label: 'Кузовной ремонт и покраска коммерческого транспорта',
-    description:
-      'Полный цикл кузовного ремонта и окраски для фургонов, пикапов и спецтехники.',
-  },
-  {
-    icon: detailing,
-    label: 'Локальный ремонт и покраска',
-    description: 'Точечно устраняем сколы и вмятины с аккуратной локальной покраской.',
-  },
-];
+import services from '../data/services';
 
 const ServiceBadges = () => (
   <section className="services" id="services">

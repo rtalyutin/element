@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Visualizations from './pages/Visualizations';
+import Gallery from './pages/Gallery';
 import './styles/base.css';
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/visualizations" element={<Visualizations />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </main>
       <Footer />
