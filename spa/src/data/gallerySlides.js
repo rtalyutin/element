@@ -100,7 +100,7 @@ const gallerySlides = {
       id: 'auto-13',
       title: 'Подготовка поверхности',
       caption: 'Шлифуем кузов и размечаем проблемные зоны перед покраской.',
-      image: auto1,
+      image: auto13,
     },{
       id: 'auto-14',
       title: 'Подготовка поверхности',
@@ -120,7 +120,7 @@ const gallerySlides = {
       id: 'auto-17',
       title: 'Подготовка поверхности',
       caption: 'Шлифуем кузов и размечаем проблемные зоны перед покраской.',
-      image: auto1,
+      image: auto17,
     }
   ],
   arches: [
