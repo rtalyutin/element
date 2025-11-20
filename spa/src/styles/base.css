@@ -557,6 +557,7 @@ button:focus-visible {
 }
 
 .gallery {
+  width: min(var(--max-width), calc(100vw - 2 * clamp(1.5rem, 5vw, 4rem)));
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
@@ -616,6 +617,9 @@ button:focus-visible {
   overflow: hidden;
   border-radius: calc(var(--border-radius) * 1.5);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  max-width: min(var(--max-width), calc(100vw - 2 * clamp(1.5rem, 5vw, 4rem)));
+  width: min(100%, calc(100vw - 2 * clamp(1.5rem, 5vw, 4rem)));
+  margin: 0 auto;
 }
 
 .gallery-carousel__track {
@@ -632,10 +636,12 @@ button:focus-visible {
   background: rgba(10, 14, 24, 0.8);
   aspect-ratio: 4 / 3;
   max-height: clamp(320px, 90vw, 900px);
+  width: min(100%, calc(100vw - 2 * clamp(1.5rem, 5vw, 4rem)));
+  box-sizing: border-box;
 }
 
 .gallery-carousel__slide img {
-  width: 100%;
+  width: min(100%, calc(100vw - 2 * clamp(1.5rem, 5vw, 4rem)));
   height: auto;
   aspect-ratio: 4 / 3;
   border-radius: calc(var(--border-radius) * 1.5);
